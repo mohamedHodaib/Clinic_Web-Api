@@ -53,7 +53,12 @@ The **Clinic Web API** is a backend application built with **C#** using the **AS
    dotnet restore
    ```
 4. Update the database connection string in `appsettings.json` to match your SQL Server instance.
-5. Run the application:
+5. Database:
+- The SQL script to create and populate the database is provided inside the `/DVLD_DataAccess` .
+- To set up:
+  1. Create a new database in SQL Server.
+  2. Run the provided `DataBase.sql` script to create tables and insert sample data.
+6. Run the application:
    ```bash
    dotnet run
    ```
